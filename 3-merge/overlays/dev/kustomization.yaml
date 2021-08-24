@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+
+configMapGenerator:
+- name: my-properties
+  behavior: merge
+  literals:
+  - MY_KEY2=OVERLAY2
+  - MY_KEY3=OVERLAY3
